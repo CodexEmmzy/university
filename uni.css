@@ -11,7 +11,7 @@
     background-size: cover;
     position: relative;
 }
-nav span{
+.span{
     color: rgba(207, 17, 17, 0.795);
     height: 50px;
     font-weight: bolder;
@@ -19,11 +19,12 @@ nav span{
 nav a{
     text-decoration: none;
 }
-nav h1{
+.h1{
    height: 30px;
     width: 150px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 nav{
     display: flex;
@@ -81,6 +82,7 @@ nav{
     color: #fff;
     border: 1px solid #fff;
     padding: 0;
+    transition: 0.9s ease-out;
 }
 .hero-btn:hover{
     display: inline-block;
@@ -89,7 +91,7 @@ nav{
     background-color: #f44336;
     border: 1px solid #f44336;
     padding: 0;
-    transition: 0.9s ease-out;
+    
 }
 
 
