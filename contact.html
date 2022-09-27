@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uni.css">
+    <title>Universitty Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="uni.html" class="h1"><h1><span class="span">EMMZY</span>  UNIVERSITY</h1></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="uni.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="abt-us">Contact Us</h1>
+    </section>
+
+     <!---Contact Us -->
+     
+     <section class="location">
+
+     </section>
+
+     <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                    <h5>No 6 ikeja off Lekki phase2</h5> 
+                    <P>Banner Island, Lagos State</P>   
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                    <h5>+234 812 7518 838</h5> 
+                    <P>Monday to Saturday, 10AM to 6PM</P>   
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                    <h5>emmaxcharlespro.com</h5> 
+                    <P>Emmail Your Queary</P>   
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                
+                <form action="form-handler.php"  method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+        <input type="email" name="email" placeholder="Enter Your Email" required>
+        <input type="text" name="Subject" placeholder="Enter Your Subject" required>
+        <textarea name="message" rows="8" placeholder="Your Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+
+
+
+            </div>
+        </div>
+     </section>
+     
+       <!----------- Footer ---->
+       <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing 
+            elit.rem quod harum assumenda corrupti <br> leniti
+                neque reprehenderit maiores
+                 qui.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> CHARLES EMMANUEL</p>
+       </section>
+
+      
+    <!---JavaScript for toggle menu -->
+
+    <script>
+        var navLinks = document.getElementById('navLinks')
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-700px"
+        }
+    </script>
+
+</body>
+</html>
